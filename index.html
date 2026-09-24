@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101b30">
+  <meta name="description" content="A classroom team review game with 46 questions based on Freberg Chapters 1–5 and Dr. Lee’s Intro to PR lecture cases.">
+  <title>PR Playbook | Midterm Review</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23101b30'/%3E%3Cpath d='M17 45V19h16c16 0 16 19 0 19h-8v7zm8-15h8c5 0 5-4 0-4h-8z' fill='%23bdf269'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="questions.js"></script>
+  <script defer src="lecture-cases.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#board">Skip to question board</a>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark" aria-hidden="true">PR</span><div><h1>PR Playbook</h1><p>INTRO TO PR <span aria-hidden="true">/</span> MIDTERM REVIEW</p></div></div>
+    <nav aria-label="Instructor controls">
+      <button class="text-button" data-action="help">How to play</button>
+      <button class="outline-button" data-action="review">Instructor review <span aria-hidden="true">↗</span></button>
+    </nav>
+  </header>
+  <main id="app"></main>
+  <footer class="page-footer"><span>Freberg 2e, Chapters 1–5 · Dr. Lee’s Fall 2026 lecture cases</span><span id="storage-note">Game progress stays in this browser.</span></footer>
+  <dialog id="game-dialog" aria-labelledby="dialog-title"><div id="dialog-content"></div></dialog>
+  <div id="announcement" class="sr-only" aria-live="polite"></div>
+  <noscript><p class="noscript">Enable JavaScript to run the review game.</p></noscript>
+</body>
+</html>
